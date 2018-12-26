@@ -70,7 +70,7 @@ pipeline {
         // to record we need to set an environment variable
         // we can load the record key variable from credentials store
         // see https://jenkins.io/doc/book/using/using-credentials/
-        CYPRESS_RECORD_KEY = credentials('cypress-example-kitchensink-record-key')
+        CYPRESS_RECORD_KEY = credentials('399761f5-74a2-4de9-bd96-cf53e676ee69')
         // because parallel steps share the workspace they might race to delete
         // screenshots and videos folders. Tell Cypress not to delete these folders
         CYPRESS_trashAssetsBeforeRuns = 'false'
