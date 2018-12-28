@@ -73,7 +73,7 @@ pipeline {
         CYPRESS_RECORD_KEY = credentials('cypress-example-kitchensink-record-key')
         // because parallel steps share the workspace they might race to delete
         // screenshots and videos folders. Tell Cypress not to delete these folders
-        CYPRESS_trashAssetsBeforeRuns = 'false'
+        //CYPRESS_trashAssetsBeforeRuns = 'false'
       }
 
       // https://jenkins.io/doc/book/pipeline/syntax/#parallel
