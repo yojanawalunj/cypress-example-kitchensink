@@ -9,13 +9,11 @@ context('Aliasing', () => {
         cy.wait(8000)
         cy.get('#m_login_signin_submit').click()
         cy.wait(8000)
-        cy.get('#m_aside_left_offcanvas_toggle').click()
+       
     })
     it('fees review and profile', () => {
         //open the fee profile page 
-        cy.contains('Practice Mgmt').click()
-        cy.contains('Fees').click()
-        cy.contains('Fee Profiles').click()
+        cy.wait(3000)
 
     })
 })
