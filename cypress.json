@@ -1,3 +1,14 @@
 {
-  "projectId": "4b7344"
+
+  "pageLoadTimeout": 400000,
+  "chromeWebSecurity": false,
+  "numTestsKeptInMemory": 0,
+  "projectId": "vnjjtg",
+  "video": false,
+  "env": {
+    "user_name": "jharris",
+    "password": "Bios$2018",
+    "baseUrl": "http://localhost:4200"
+ }
+
 }
