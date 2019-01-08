@@ -3,7 +3,7 @@ context('Aliasing', () => {
         cy.visit('http://localhost:4200')
         cy.on('window:confirm', () => true)
         cy.get('.m-form__group').find('input[type=text]').first()
-            .type('jharis')
+            .type('jharris')
         cy.get('.m-form__group').find('input[type=password]').first()
             .type('Bip$2018')
         cy.wait(8000)
