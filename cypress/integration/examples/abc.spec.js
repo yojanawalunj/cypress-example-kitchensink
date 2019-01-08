@@ -5,7 +5,7 @@ context('Aliasing', () => {
         cy.get('.m-form__group').find('input[type=text]').first()
             .type('jharris')
         cy.get('.m-form__group').find('input[type=password]').first()
-            .type('Bip$2018')
+            .type('Bios$2018')
         
         cy.get('#m_login_signin_submit').click()
         
