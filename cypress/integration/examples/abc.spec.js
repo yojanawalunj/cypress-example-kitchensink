@@ -12,7 +12,7 @@ context('Aliasing', () => {
         cy.get('#m_aside_left_offcanvas_toggle').click()
        
     })
-    it('fees review and profile', () => {
+    it('login', () => {
         //open the fee profile page 
         cy.wait(3000)
         cy.contains('Clients').click()
