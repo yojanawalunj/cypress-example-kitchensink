@@ -43,25 +43,7 @@ context('Aliasing', () => {
         cy.get('input[ng-reflect-name=valuation]').type('10')
         cy.get('input[ng-reflect-name=comments]').type('Cypress testing')
         cy.get('.btn-primary').contains('Submit').click()//click on submit button to save the data
-        cy.get('input[type=search]')
-            .type('Cypress testing')
-            .then((val) => {
-                if (val){
-                    cy.get('.fa-pencil-alt').first().click()  
-                    }
-                })
-        
-        // cy.get('.fa-pencil-alt').first().click()       
-        cy.get('my-date-picker[ng-reflect-name=dateOfValuation]').within(($form) => {
-            cy.get('.icon-mydpcalendar').click()
-            cy.get('.currmonth').within(($form) => {
-                cy.contains('5').click({force: true})
-                })
-            })
-        cy.get('input[ng-reflect-name=valuation]').clear().type('20')
-        cy.get('input[ng-reflect-name=comments]').clear().type('Cypress edit')
-        cy.get('.btn-primary').contains('Submit').click() 
-        cy.reload()       
+            
 
         }) 
     }) 
