@@ -6,7 +6,16 @@
  */
 context('Aliasing', () => {
     beforeEach(() => {
-        cy.login()
+        cy.visit('http://localhost:4200')
+        cy.on('window:confirm', () => true)
+        cy.get('.m-form__group').find('input[type=text]').first()
+            .type('jharris')
+        cy.get('.m-form__group').find('input[type=password]').first()
+            .type('Bios$2018')
+        
+        cy.get('#m_login_signin_submit').click()
+        
+        cy.get('#m_aside_left_offcanvas_toggle').click()
     })   
     it('Add valuations to Private Equity', () => {
         cy.contains('Private Investments').click()
