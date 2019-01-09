@@ -1,9 +1,4 @@
-/**
- * @author yojana.walunj@itexecutors.com Yojana Walunj
- * @copyright 2018,BIP Wealth
- * @version 0.4
- * @since 0.0.1
- */
+
 context('Aliasing', () => {
     beforeEach(() => {
         cy.visit('http://localhost:4200')
