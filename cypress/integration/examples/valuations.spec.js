@@ -12,7 +12,7 @@ context('Aliasing', () => {
         
         cy.get('#m_aside_left_offcanvas_toggle').click()
     })   
-    it('Add valuations to Private Equity and save the changes', () => {
+    it('Add valuationsprivate Equity and save the changes', () => {
         cy.contains('Private Investments').click()
         cy.get('input[type=search]')
             .type('BIP Capital PAN Convertible Note, LLC')
